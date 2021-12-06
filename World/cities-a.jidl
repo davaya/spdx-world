@@ -1,0 +1,21 @@
+World = ArrayOf(Country){1..*}
+
+Country = Record
+  1 name CountryName
+  2 languages Language [0..*]
+  3 cities City [0..*]
+
+City = Record
+  1 name CityName
+  2 latitude Number{-90..90}
+  3 longitude Number{-180..180}
+  4 elevation Number optional
+
+CountryName = String
+
+CityName = String
+
+Language = Enumerated   // IS0-639-1 Language Code
+  1 en  // English
+  2 fr  // French
+  3 de  // German

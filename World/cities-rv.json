@@ -1,0 +1,28 @@
+{
+  "countries": [
+    {
+      "name": "France",
+      "languages": ["fr", "de"]
+    }
+  ],
+  "cities": [
+    {
+      "name": "Paris",
+      "country": "France",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    {
+      "name": "Nice",
+      "country": "France",
+      "latitude": 43.7102,
+      "longitude": 7.2620
+    },
+    {
+      "name": "Calais",
+      "country": "France",
+      "latitude": 50.9513,
+      "longitude": 1.8587
+    }
+  ]
+}

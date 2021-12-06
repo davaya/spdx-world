@@ -1,0 +1,19 @@
+{
+  "France": {
+    "languages": ["fr", "de"],
+    "cities": {
+      "Paris": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "Nice": {
+        "latitude": 43.7102,
+        "longitude": 7.2620
+      },
+      "Calais": {
+        "latitude": 50.9513,
+        "longitude": 1.8587
+      }
+    }
+  }
+}

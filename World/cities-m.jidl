@@ -1,0 +1,19 @@
+World = MapOf(CountryName, Country){1..*}
+
+Country = Record
+  1 languages Language [0..*]
+  2 cities MapOf(CityName, City){0..*}
+
+City = Record
+  1 latitude Number{-90..90}
+  2 longitude Number{-180..180}
+  3 elevation Number optional
+
+CountryName = String
+
+CityName = String
+
+Language = Enumerated   // IS0-639-1 Language Code
+  1 en  // English
+  2 fr  // French
+  3 de  // German
