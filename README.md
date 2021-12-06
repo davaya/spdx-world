@@ -18,17 +18,16 @@ There are several ways to define information that represents even this simple mo
   3. Arrays or Maps with references between types
 
 As a logical model gets more complex, for example by defining generalization / specialization relationships,
-the number of ways to represent it as information increases.
-Information has a small set of datatype building blocks, and designing an information model
-means making design choices for which building block to use to represent each characteristic
-of the logical model.
-
-Three information models representing the World logical model are:
+the number of ways to represent it as information increases. Three possible information models are:
 ![World information model](Images/information-model-1.jpg)
 
-For each information model there are many ways of serializing an information instance into data. Only JSON examples are shown, but the same instance can be serialized to and from XML, RDF, JSON-LD, etc.  For each data type there are three verbosity levels:
+Information models use a small set of datatypes as building blocks, and deciding which datatype to use
+to represent each characteristic of the logical model results in a single information model.
+But there are many ways of serializing an information instance into data. Only JSON examples are shown,
+but the same instance can be serialized to and from XML, RDF, JSON-LD, etc.
+For a given data type there are three verbosity levels:
 1. The "verbose" method typically used in JSON-centric design - every property is serialized with a name and value
-2. The "compact" method used with databases - results in "friendly" JSON data without unnecessary repeated key names
+2. The "compact" method results in "friendly" JSON data without unnecessary repeated key names
 3. The "concise" method, which is compact and also replaces strings with indexes, typically used for vocabularies and localization where a message number gets translated to equivalent strings in different languages
 
 ![World information model](Images/information-model-2.jpg)
@@ -43,4 +42,4 @@ each of the data files against the IM, then prints the information instance deco
 Although the data formats are different, the information contained in each file is identical,
 indicating that information can be translated from one data format to any other without loss.
 
-Install the JADN information modeling package prior to running the check-cities script with:`pip install jadn`
+Install the [JADN](https://pypi.org/project/jadn/) information modeling package prior to running the check-cities script with:`pip install jadn`
